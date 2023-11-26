@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="/weather.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container1">
+      <ul id="ul1">
+        <li><a href="/">Home</a>
+        </li>
+        <li>
+          <a href='/weather'>Current</a>
+        </li>
+        <li><a href="/Forcast">Forcast</a>
+        </li>
+        <li><a href="/About">About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <img class="image" src='<%= imageUrl %>'>
+      <h1 class='temperature'><%= temp %>°</h1>
+      <p class='city'>
+        <%= query %>
+      </p>
+      <p class="description">
+        <%= WeatherDescription %>
+      </p>
+      <p class="Max-Min">
+        <%= max_temp %>°|<%= min_temp %>°
+      </p>
+    </div>
+    <% if(WeatherDescription == 'thunderstorm' || WeatherDescription == 'light rain' || WeatherDescription == 'heavy intensity rain' || WeatherDescription == 'moderate rain') { %>
+      <style>
+        body{
+          background-image: url('thunderRain.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+      <% } %>
+      <% if(WeatherDescription == 'mist') { %>
+        <style>
+          body{
+            background-image: url('mist.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
+        <% } %>
+        <% if(WeatherDescription == 'clear sky') { %>
+          <style>
+            body{
+              background-image: url('clearSky.jpg');
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          </style>
+          <% } %>
+          <% if(WeatherDescription == 'haze') { %>
+            <style>
+              body{
+                background-image: url('haze.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            </style>
+            <% } %>
+            <% if(WeatherDescription == 'scattered clouds' || WeatherDescription == 'moderate clouds') { %>
+              <style>
+                body{
+                  background-image: url('scatteredCloud.webp');
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                }
+              </style>
+              <% } %>
+              <% if(WeatherDescription == 'few clouds') { %>
+                <style>
+                  body{
+                    background-image: url('fewClouds.jpeg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                  }
+                </style>
+                <% } %>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+html{
+  background-image: url('R.jpeg');
+  height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+label{
+  color: yellow;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 50px;
+  margin-bottom: 20px
+}
+input{
+  width: 277px;
+  height: 57px;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+input::placeholder{
+  font-size: 20px;
+  padding: 10px;
+  padding-top: 10px;
+}
+button{
+  width:100px;
+  height:50px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+}
+#btn1{
+  margin-top: 10px;
+}
+
+footer{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

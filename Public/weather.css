@@ -1,0 +1,57 @@
+.container1{
+  background-color: white;
+  background: none;
+  padding-left: 65rem;
+}
+ul{
+  list-style: none;
+  color: black;
+}
+li{
+  display: inline;
+  padding: 0.7rem;
+  font-size: 1.5rem;
+}
+
+a{
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.container{
+  position: relative;
+  left: 37.5rem;
+  border-radius: 20px;
+  margin-top: 70px;
+  background-color: skyblue;
+  width: 20%;
+  height: 50%;
+}
+.image{
+  padding-left: 100px;
+}
+.temperature{
+  font-family: montserrat;
+  text-align: center;
+}
+.city{
+  font-family: sans-serif;
+  margin-top: -14px;
+  text-align: center;
+}
+.description{
+  font-family: serif;
+  font-size: 20px;
+  padding: 19px;
+  margin-bottom: -54px
+}
+.Max-Min{
+  font-family: serif;
+  font-size: 18px;
+  padding-left: 195px;
+}
