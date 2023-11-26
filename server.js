@@ -18,6 +18,8 @@ app.get('/About', (req,res) => {
   res.render('About');
 })
 
-app.listen('3000', ()=>{
-  console.log("Start listening at port 3000");
+const port = process.env.PORT || 3000
+
+app.listen(port, ()=>{
+  console.log("Start listening at port ${port}");
 })
