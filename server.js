@@ -5,7 +5,7 @@ const ejs = require('ejs');
 var app = express();
 app.set('views', './views');
 app.set('view engine', 'ejs');
-const bodyParser = require('body-Parser');
+const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static('Public'));
 app.set('views', path.join(__dirname,'views'));
